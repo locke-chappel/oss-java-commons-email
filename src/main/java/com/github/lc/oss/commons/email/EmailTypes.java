@@ -5,8 +5,8 @@ import java.util.Set;
 import com.github.lc.oss.commons.util.TypedEnumCache;
 
 public enum EmailTypes {
-    PlainText("text/plain"),
-    HTML("text/html");
+    PlainText("text/plain; charset=utf-8"),
+    HTML("text/html; charset=utf-8");
 
     private static final TypedEnumCache<EmailTypes, EmailTypes> CACHE = new TypedEnumCache<>(EmailTypes.class, false);
 

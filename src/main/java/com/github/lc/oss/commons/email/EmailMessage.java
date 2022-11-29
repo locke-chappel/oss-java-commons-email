@@ -78,6 +78,9 @@ public class EmailMessage {
     }
 
     public void setType(EmailTypes type) {
+        if (type == null) {
+            throw new IllegalArgumentException("Email type cannot be null");
+        }
         this.type = type;
     }
 }

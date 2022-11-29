@@ -32,7 +32,7 @@ public class EmailTypesTest extends AbstractMockTest {
 
     @Test
     public void test_mimes() {
-        Assertions.assertEquals("text/plain", EmailTypes.PlainText.getMime());
-        Assertions.assertEquals("text/html", EmailTypes.HTML.getMime());
+        Assertions.assertEquals("text/plain; charset=utf-8", EmailTypes.PlainText.getMime());
+        Assertions.assertEquals("text/html; charset=utf-8", EmailTypes.HTML.getMime());
     }
 }

@@ -18,4 +18,14 @@ public class EmailMessageTest extends AbstractMockTest {
         Assertions.assertNull(message.getBody());
         Assertions.assertEquals(EmailTypes.HTML, message.getType());
     }
+
+    @Test
+    public void test_errors() {
+        EmailMessage message = new EmailMessage();
+        try {
+            message.setType(null);
+        } catch (IllegalArgumentException ex) {
+            Assertions.assertEquals("Email type cannot be null", ex.getMessage());
+        }
+    }
 }
