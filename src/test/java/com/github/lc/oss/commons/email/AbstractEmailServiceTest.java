@@ -22,7 +22,7 @@ public class AbstractEmailServiceTest extends AbstractMockTest {
         }
 
         @Override
-        public void send(EmailMessage message) {
+        public void send(Message message) {
         }
     }
 

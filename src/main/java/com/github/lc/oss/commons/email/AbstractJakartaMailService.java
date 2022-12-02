@@ -3,7 +3,6 @@ package com.github.lc.oss.commons.email;
 import java.util.Properties;
 
 import jakarta.mail.Authenticator;
-import jakarta.mail.Message;
 import jakarta.mail.MessagingException;
 import jakarta.mail.PasswordAuthentication;
 import jakarta.mail.Session;
@@ -28,7 +27,7 @@ public abstract class AbstractJakartaMailService extends AbstractEmailService {
     }
 
     @Override
-    public void send(EmailMessage message) {
+    public void send(Message message) {
         Session session = this.newSession();
         try {
             MimeMessage mail = new MimeMessage(session);
@@ -42,19 +41,19 @@ public abstract class AbstractJakartaMailService extends AbstractEmailService {
 
             if (this.isNotBlank(message.getTo())) {
                 for (String to : message.getTo()) {
-                    mail.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+                    mail.addRecipient(jakarta.mail.Message.RecipientType.TO, new InternetAddress(to));
                 }
             }
 
             if (this.isNotBlank(message.getCc())) {
                 for (String cc : message.getCc()) {
-                    mail.addRecipient(Message.RecipientType.CC, new InternetAddress(cc));
+                    mail.addRecipient(jakarta.mail.Message.RecipientType.CC, new InternetAddress(cc));
                 }
             }
 
             if (this.isNotBlank(message.getBcc())) {
                 for (String bcc : message.getBcc()) {
-                    mail.addRecipient(Message.RecipientType.BCC, new InternetAddress(bcc));
+                    mail.addRecipient(jakarta.mail.Message.RecipientType.BCC, new InternetAddress(bcc));
                 }
             }
 

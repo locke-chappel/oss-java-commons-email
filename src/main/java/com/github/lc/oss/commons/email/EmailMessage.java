@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class EmailMessage {
+public class EmailMessage implements Message {
     private String from;
     private Set<String> to;
     private Set<String> cc;

@@ -23,11 +23,6 @@
 
         <!-- Jakarta Mail -->
         <dependency>
-            <groupId>jakarta.mail</groupId>
-            <artifactId>jakarta.mail-api</artifactId>
-            <version>${jakarta.mail.jakarta.mail-api.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.eclipse.angus</groupId>
             <artifactId>jakarta.mail</artifactId>
             <version>${org.eclipse.angus.jakarta.mail.version}</version>
