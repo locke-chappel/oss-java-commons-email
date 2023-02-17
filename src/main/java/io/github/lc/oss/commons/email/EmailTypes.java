@@ -1,8 +1,8 @@
-package com.github.lc.oss.commons.email;
+package io.github.lc.oss.commons.email;
 
 import java.util.Set;
 
-import com.github.lc.oss.commons.util.TypedEnumCache;
+import io.github.lc.oss.commons.util.TypedEnumCache;
 
 public enum EmailTypes {
     PlainText("text/plain; charset=utf-8"),

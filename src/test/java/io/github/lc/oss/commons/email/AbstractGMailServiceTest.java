@@ -1,12 +1,11 @@
-package com.github.lc.oss.commons.email;
+package io.github.lc.oss.commons.email;
 
 import java.util.Properties;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import com.github.lc.oss.commons.testing.AbstractMockTest;
-
+import io.github.lc.oss.commons.testing.AbstractMockTest;
 import jakarta.mail.internet.MimeMessage;
 
 public class AbstractGMailServiceTest extends AbstractMockTest {

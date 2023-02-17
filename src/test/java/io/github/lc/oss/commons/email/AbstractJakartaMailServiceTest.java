@@ -1,4 +1,4 @@
-package com.github.lc.oss.commons.email;
+package io.github.lc.oss.commons.email;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -7,8 +7,7 @@ import java.util.Properties;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import com.github.lc.oss.commons.testing.AbstractMockTest;
-
+import io.github.lc.oss.commons.testing.AbstractMockTest;
 import jakarta.mail.Authenticator;
 import jakarta.mail.MessagingException;
 import jakarta.mail.PasswordAuthentication;
