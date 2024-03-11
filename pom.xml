@@ -12,7 +12,7 @@
     <version>1.0.10</version>
     <name>${project.artifactId}</name>
     <description>A generic email interface accepting messages in a common format and then translating them to a provider specific formats</description>
-    <url>https://github.com/locke-chappel/oss-commons-email</url>
+    <url>https://github.com/locke-chappel/oss-java-commons-email</url>
 
     <licenses>
         <license>
