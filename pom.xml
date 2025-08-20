@@ -5,11 +5,11 @@
     <parent>
         <groupId>io.github.locke-chappel.oss.commons</groupId>
         <artifactId>parent</artifactId>
-        <version>1.0.21</version>
+        <version>1.0.22</version>
     </parent>
 
     <artifactId>email</artifactId>
-    <version>1.0.21</version>
+    <version>1.0.22</version>
     <name>${project.artifactId}</name>
     <description>A generic email interface accepting messages in a common format and then translating them to a provider specific formats</description>
     <url>https://github.com/locke-chappel/oss-java-commons-email</url>
